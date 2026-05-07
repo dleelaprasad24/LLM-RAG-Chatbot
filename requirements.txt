@@ -1,0 +1,46 @@
+# Core LangChain stack
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-core>=0.3.0
+langchain-text-splitters>=0.3.0
+langchain-huggingface>=0.1.0
+langchain-chroma>=0.1.4
+
+# Vector store
+chromadb>=0.5.0
+# Bundled modern sqlite3 - required when the host's sqlite3 < 3.35 (Chroma needs >= 3.35)
+pysqlite3-binary>=0.5.0; sys_platform == "linux"
+
+# Embeddings (free, runs locally)
+sentence-transformers>=3.0.0
+
+# LLM providers (install at least one)
+langchain-groq>=0.2.0
+langchain-openai>=0.2.0
+langchain-ollama>=0.2.0
+
+# Document loaders
+pypdf>=5.0.0
+python-docx>=1.1.0
+unstructured>=0.15.0
+beautifulsoup4>=4.12.0
+requests>=2.32.0
+
+# UI - Streamlit (one of two interchangeable frontends)
+streamlit>=1.39.0
+
+# API - FastAPI backend (the other interchangeable frontend)
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+tiktoken>=0.8.0
+# Allows PEP-604 unions (`X | None`) in pydantic models on Python 3.9
+eval_type_backport>=0.2.0; python_version < "3.10"
+
+# Testing
+pytest>=8.3.0

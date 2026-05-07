@@ -1,0 +1,40 @@
+# Environment
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Project artifacts
+chroma_db/*
+!chroma_db/.gitkeep
+data/*
+!data/.gitkeep
+logs/
+*.log
+
+# Streamlit
+.streamlit/secrets.toml
