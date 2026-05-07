@@ -54,7 +54,7 @@ app = FastAPI(
         "Use the endpoints below to ingest documents and chat with them."
     ),
     version="1.0.0",
-    contact={"name": "Leela Prasad Dondla"},
+    contact={"name": "D Leela Prasad"},
     license_info={"name": "MIT"},
 )
 
