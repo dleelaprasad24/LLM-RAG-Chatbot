@@ -7,7 +7,7 @@ ships with **two interchangeable frontends** - a **Streamlit** UI for humans
 and a **FastAPI** REST backend (with auto-generated Swagger docs) for
 integrations. Pluggable LLM backends (Groq, OpenAI, or fully local Ollama).
 
-> Designed as a portfolio / resume project: small, well-structured, easy to
+> Designed as a portfolio : small, well-structured, easy to
 > demo, and uses only free tools out-of-the-box.
 
 ---
